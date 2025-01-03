@@ -391,7 +391,7 @@
           </div>
         </div>
         <div class="col-lg-8 offset-lg-2  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-          <form id="s_form">
+          <form id="sform">
             <div class="row">
               <div class="col-lg-4 col-sm-4">
                 <fieldset>
@@ -677,8 +677,7 @@
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     function first(e) {
           e.preventDefault();
@@ -686,7 +685,7 @@
               .sendForm(
                   "service_0kh6ws1",
                   "template_51b11eh",
-                  "#s_form",
+                  "#sform",
                   "-kiNEahRvrA57oP-_"
               )
               .then(
