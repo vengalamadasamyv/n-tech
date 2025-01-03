@@ -589,7 +589,7 @@
           </div>
         </div>
         <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
+          <form id="mform">
             <div class="row">
               <div class="col-lg-12">
                 <div class="contact-dec">
@@ -630,23 +630,23 @@
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
-                        <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                        <input type="name" name="m_name" id="name" placeholder="Name" autocomplete="on" required>
                       </fieldset>
                       <fieldset>
-                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                        <input type="text" name="m_mail" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
                       </fieldset>
                       <fieldset>
-                        <input type="subject" name="mobile" id="subject" placeholder="Mobile No" autocomplete="on">
+                        <input type="subject" name="m_number" id="subject" placeholder="Mobile No" autocomplete="on">
                       </fieldset>
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
-                        <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
+                        <textarea name="m_message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
                       <fieldset>
-                        <button type="submit" id="form-submit" class="main-button ">Send Now</button>
+                        <button type="submit" onclick="second(e)" id="form-submit" class="main-button ">Send Now</button>
                       </fieldset>
                     </div>
                   </div>
@@ -686,6 +686,28 @@
                   "service_0kh6ws1",
                   "template_51b11eh",
                   "#sform",
+                  "-kiNEahRvrA57oP-_"
+              )
+              .then(
+                  function (response) {
+                      console.log("SUCCESS!", response.status, response.text);
+                      alert("Thank You for reach us, We Contact As Soon As Possible!!!");
+                      // alert("Payment Successful" + response.razorpay_payment_id);
+                      window.location.href = "./index.html";
+                  },
+                  function (error) {
+                      console.log("FAILED...", error);
+                  }
+              );
+      };
+
+function second(e) {
+          e.preventDefault();
+          emailjs
+              .sendForm(
+                  "service_vu8m0l7",
+                  "template_de1qjdk",
+                  "#mform",
                   "-kiNEahRvrA57oP-_"
               )
               .then(
