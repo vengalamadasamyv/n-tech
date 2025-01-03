@@ -1772,7 +1772,7 @@ contact
 }
 
 
-form#contact:before {
+form#mform:before {
   background-image: url(../images/contact-top-right-v2.png);
   position: absolute;
   right: 0;
@@ -1791,7 +1791,7 @@ form#contact:before {
   top: -242px;
 }
 
-form#contact:after {
+form#mform:after {
   background-image: url(../images/contact-bottom-right-v2.png);
   position: absolute;
   right: 0;
@@ -1803,7 +1803,7 @@ form#contact:after {
   z-index: 1;
 }
 
-form#contact {
+form#mform {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   position: relative;
   background-color: #fff;
@@ -1811,7 +1811,7 @@ form#contact {
   text-align: center;
 }
 
-form#contact #map iframe {
+form#mform #map iframe {
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;
   margin-bottom: -7px;
@@ -1820,7 +1820,7 @@ form#contact #map iframe {
 }
 
 @media screen and (min-width:320px) and (max-width:768px){
-  form#contact #map iframe {
+  form#mform #map iframe {
     border-radius: 23px;
     height: 300px !important;
     margin-bottom: 1rem;
@@ -1861,7 +1861,7 @@ form#contact #map iframe {
   color: #fe664e;
 }
 
-form#contact input {
+form#mform input {
   width: 100%;
   height: 46px;
   background-color: transparent;
@@ -1875,11 +1875,11 @@ form#contact input {
   margin-top: 30px;
 }
 
-form#contact input::placeholder {
+form#mform input::placeholder {
   color: #aaa;
 }
 
-form#contact textarea {
+form#mform textarea {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
@@ -1897,11 +1897,11 @@ form#contact textarea {
   margin-top: 30px;
 }
 
-form#contact textarea::placeholder {
+form#mform textarea::placeholder {
   color: #aaa;
 }
 
-form#contact button {
+form#mform button {
   display: inline-block;
   background-color: #fff;
   font-size: 15px;
@@ -1918,7 +1918,7 @@ form#contact button {
   outline: none;
 }
 
-form#contact button:hover {
+form#mform button:hover {
   background-color: #fe664e!important;
   color: #fff!important;
 }
